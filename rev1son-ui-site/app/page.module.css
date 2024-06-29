@@ -1,0 +1,126 @@
+.page_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--background-color);
+  /* min-height: 100vh; */
+  height: 100%;
+  color: var(--primary);
+  /* padding: 20px; */
+}
+
+.page_section {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  /* background-color: red; */
+  flex-direction: column;
+  max-width: 65%;
+  text-align: justify;
+  padding: 20px;
+  gap: 60px;
+  height: 100%;
+  /* min-height: calc(90vh - 20px); */
+}
+
+.title > h1 {
+  margin: 0;
+}
+.subtitle {
+  display: flex;
+
+  flex-direction: column;
+  gap: 20px;
+}
+.subtitle > p {
+  display: flex;
+  font-size: 20px;
+  margin: 0;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 60px;
+}
+
+.feature {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 25%;
+  /* padding: 20px; */
+  gap: 10px;
+}
+
+.feature_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: var(--primary);
+  color: var(--background-color);
+  border-radius: 4px;
+}
+
+.icon {
+  height: 20px;
+  width: auto;
+}
+
+.feature_name {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.feature_info {
+  font-size: 14px;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  font-size: 16px;
+  background-color: var(--background-color);
+  border-radius: 4px;
+  color: var(--primary);
+  border: 1px solid var(--primary-border);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--primary);
+  color: var(--background-color);
+}
+
+.primary {
+  background-color: var(--primary);
+  color: var(--background-color);
+}
+
+.primary:hover {
+  background-color: var(--background-color);
+  color: var(--primary);
+}
+
+.btn > p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.btn_icon {
+  height: 20px;
+  width: auto;
+}
