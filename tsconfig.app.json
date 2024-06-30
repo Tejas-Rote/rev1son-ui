@@ -26,7 +26,10 @@
     /* Type definition generation */
     "declaration": true,
     "declarationDir": "dist/types",
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+
+    /* Include Node.js types */
+    "types": ["node"]
   },
   "include": ["src"]
 }
