@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./Accordion.module.css";
-type AccordionButtonProps = {
+interface AccordionButtonProps {
   children: React.ReactNode;
   className?: string;
   //   onClick: () => void;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
-};
+}
 
 const AccordionButton = ({
   children,

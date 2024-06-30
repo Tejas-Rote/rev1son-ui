@@ -1,9 +1,9 @@
 import styles from "./Alert.module.css";
 
-type AlertDescriptionProps = {
+interface AlertDescriptionProps {
   children: React.ReactNode;
   className?: string;
-};
+}
 
 const AlertDescription = ({ children, className }: AlertDescriptionProps) => {
   return (

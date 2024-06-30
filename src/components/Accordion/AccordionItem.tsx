@@ -3,12 +3,12 @@ import styles from "./Accordion.module.css";
 import withAccordionState from "./withAccordionState";
 import AccordionButton from "./AccordionButton";
 import AccordionContent from "./AccordionContent";
-type AccordionItemProps = {
+interface AccordionItemProps {
   children: React.ReactNode;
   className?: string;
   isOpen?: boolean; // These props will be injected by the HOC
   toggleOpen?: () => void; // These props will be injected by the HOC
-};
+}
 
 const AccordionItem = ({
   children,

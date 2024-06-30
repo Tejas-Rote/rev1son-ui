@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./TextInput.module.css";
 
-type TextInputFieldProps = {
+interface TextInputFieldProps {
   type?: string;
   placeholder?: string;
   value?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   error?: boolean;
-};
+}
 
 const TextInputField = ({
   type = "text",

@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Accordion.module.css";
-type AccordionContentProps = {
+interface AccordionContentProps {
   children: React.ReactNode;
   className?: string;
   isOpen?: boolean;
-};
+}
 
 const AccordionContent = ({
   children,

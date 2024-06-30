@@ -1,8 +1,8 @@
 import styles from "./Accordion.module.css";
-type AccordionTitleProps = {
+interface AccordionTitleProps {
   children: React.ReactNode;
   className?: string;
-};
+}
 const AccordionTitle = ({ children, className }: AccordionTitleProps) => {
   return (
     <div className={`${styles.accordionTitle}  ${className}`}>{children}</div>

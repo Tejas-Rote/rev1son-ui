@@ -1,9 +1,9 @@
 import styles from "./TextInput.module.css";
 
-type TextInputHelperTextProps = {
+interface TextInputHelperTextProps {
   children: React.ReactNode;
   error?: boolean;
-};
+}
 
 const TextInputHelperText: React.FC<TextInputHelperTextProps> = ({
   children,

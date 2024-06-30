@@ -1,10 +1,9 @@
-import React from "react";
-import styles from "./Accordian.module.css";
+import styles from "./Accordion.module.css";
 
-type AccordionIconProps = {
+interface AccordionIconProps {
   children: React.ReactNode;
   className?: string;
-};
+}
 
 const AccordionIcon = ({ children, className }: AccordionIconProps) => {
   return (

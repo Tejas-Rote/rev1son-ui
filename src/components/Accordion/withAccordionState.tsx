@@ -1,9 +1,9 @@
 import { useState, ComponentType } from "react";
 
-type WithAccordionStateProps = {
+interface WithAccordionStateProps {
   isOpen: boolean;
   toggleOpen: () => void;
-};
+}
 
 const withAccordionState = <P extends object>(
   Component: ComponentType<P & WithAccordionStateProps>
