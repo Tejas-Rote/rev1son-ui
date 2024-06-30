@@ -1,0 +1,57 @@
+.textInputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 20px;
+  /* min-width: 20vw; */
+  /* width: 100%; */
+  width: 20vw;
+  border: 1px solid var(--primary-border);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.textInputContainer:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.textInputLabel {
+  display: flex;
+  font-weight: bold;
+}
+
+.textFieldInputField {
+  padding: 4px 8px;
+  outline: none;
+  border: 1px solid var(--primary-border);
+  color: var(--primary);
+  background-color: var(--background-color);
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: "Space Mono", monospace;
+}
+
+.textFieldInputField:focus {
+  border-color: var(--highlight);
+  outline: none;
+}
+
+.inputField.error {
+  border-color: red;
+}
+
+.textFieldInputHelperText {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 10px;
+  color: var(--border-main);
+}
+
+.textFieldInputHelperText.error {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 10px;
+  color: red;
+}
