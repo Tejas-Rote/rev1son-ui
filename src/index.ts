@@ -1,5 +1,7 @@
 export {default as Accordion} from './components/Accordion/Accordion';
 export { default as AccordionButton } from "./components/Accordion/AccordionButton";
+export { default as AccordionItem } from "./components/Accordion/AccordionItem";
+
 export { default as AccordionTitle } from "./components/Accordion/AccordionTitle";
 export { default as AccordionContent } from "./components/Accordion/AccordionContent";
 export { default as AccordionHeader } from "./components/Accordion/AccordionHeader";
