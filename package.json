@@ -3,7 +3,7 @@
   "version": "0.0.11",
   "main": "dist/rev1son-ui.umd.js",
   "module": "dist/rev1son-ui.esm.js",
-  "types": "dist/types/index.d.ts",
+  "types": "dist/types/src/index.d.ts",
   "type": "module",
   "scripts": {
     "dev": "vite",
