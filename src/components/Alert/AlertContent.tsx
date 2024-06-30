@@ -1,5 +1,5 @@
 import styles from "./Alert.module.css";
-interface AlertContentProps {
+export interface AlertContentProps {
   children: React.ReactNode;
   className?: string;
 }

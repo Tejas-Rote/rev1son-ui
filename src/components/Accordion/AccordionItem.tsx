@@ -3,7 +3,7 @@ import styles from "./Accordion.module.css";
 import withAccordionState from "./withAccordionState";
 import AccordionButton from "./AccordionButton";
 import AccordionContent from "./AccordionContent";
-interface AccordionItemProps {
+export interface AccordionItemProps {
   children: React.ReactNode;
   className?: string;
   isOpen?: boolean; // These props will be injected by the HOC

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Accordion.module.css";
-interface AccordionButtonProps {
+export interface AccordionButtonProps {
   children: React.ReactNode;
   className?: string;
   //   onClick: () => void;

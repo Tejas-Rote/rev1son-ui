@@ -1,6 +1,6 @@
 import styles from "./TextInput.module.css";
 
-interface TextInputProps {
+export interface TextInputProps {
   children: React.ReactNode;
 }
 

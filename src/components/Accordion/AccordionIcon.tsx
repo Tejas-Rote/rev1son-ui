@@ -1,6 +1,6 @@
 import styles from "./Accordion.module.css";
 
-interface AccordionIconProps {
+export interface AccordionIconProps {
   children: React.ReactNode;
   className?: string;
 }

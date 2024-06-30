@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./TextInput.module.css";
 
-interface TextInputFieldProps {
+export interface TextInputFieldProps {
   type?: string;
   placeholder?: string;
   value?: string;

@@ -1,5 +1,5 @@
 import styles from "./Accordion.module.css";
-interface AccordionTitleProps {
+export interface AccordionTitleProps {
   children: React.ReactNode;
   className?: string;
 }

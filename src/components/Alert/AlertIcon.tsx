@@ -1,6 +1,6 @@
 import styles from "./Alert.module.css";
 
-interface AlertIconProps {
+export interface AlertIconProps {
   children: React.ReactNode;
   className?: string;
 }

@@ -1,6 +1,6 @@
 import styles from "./TextInput.module.css";
 
-interface TextInputHelperTextProps {
+export interface TextInputHelperTextProps {
   children: React.ReactNode;
   error?: boolean;
 }
