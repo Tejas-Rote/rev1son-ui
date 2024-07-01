@@ -1,6 +1,4 @@
 import { Button } from "rev1son-ui";
-import AlertExample from "./examples/AlertExample";
-
 import {
   Alert,
   AlertIcon,
