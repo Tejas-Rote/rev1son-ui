@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --background-color: #ffffff;
+  --primary: #000000;
+  --highlight: #ff0000;
+  --primary-border: rgba(0, 0, 0, 0.15);
+  --border-main: rgba(0, 0, 0, 0.65);
+}
