@@ -1,10 +1,106 @@
+@import url("https://fonts.googleapis.com/css1?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
-  --background-color: #ffffff;
-  --primary: #000000;
-  --highlight: #ff0000;
+  --bg-color-primary: #ffffff;
+  --text-color-primary: #000000;
+  --primary-highlight: #ff0000;
   --primary-border: rgba(0, 0, 0, 0.15);
-  --border-main: rgba(0, 0, 0, 0.65);
+  --secondary-border: rgba(0, 0, 0, 0.65);
+  --initial-shadow: rgba(0, 0, 0, 0.15);
+  --hover-shadow: rgba(0, 0, 0, 0.35);
+}
+[data-theme="dark"] {
+  --bg-color-primary: #000000;
+  --text-color-primary: #ffffff;
+  --primary-highlight: #ff0000;
+  --primary-border: rgba(255, 255, 255, 0.15);
+  --secondary-border: rgba(255, 255, 255, 0.65);
+  --initial-shadow: rgba(255, 255, 255, 0.15);
+  --hover-shadow: rgba(255, 255, 255, 0.25);
+}
+@layer utilities {
+  .shadow-initial {
+    box-shadow: var(--initial-shadow) 1.95px 1.95px 2.6px;
+  }
+  .shadow-hover {
+    box-shadow: var(--hover-shadow) 0px 5px 15px;
+  }
+  .bg-primary {
+    background-color: var(--bg-color-primary);
+  }
+  .bg-secondary {
+    background-color: var(--bg-color-secondary);
+  }
+  .text-primary {
+    color: var(--text-color-primary);
+  }
+  .border-primary {
+    border-color: var(--primary-border);
+  }
+
+  .border-secondary {
+    border-color: var(--secondary-border);
+    border: 1px solid;
+  }
+  .border-highlight {
+    border-color: var(--primary-highlight);
+  }
+
+  .bg-hover {
+    background-color: var(--primary-highlight);
+  }
+  .text-hover {
+    color: var(--bg-color-primary);
+  }
+  .text-highlight {
+    color: var(--primary-highlight);
+  }
+  .transition-all {
+    transition: all 200ms ease-in-out;
+  }
+  .font-mono {
+    font-family: "Space Mono", monospace;
+  }
+  .translate-y-full {
+    transform: translateY(
+      calc(100% + 1rem)
+    ); /* Add a bit more to fully hide with margin */
+  }
+
+  .-translate-y-full {
+    transform: translateY(
+      calc(-100% - 1rem)
+    ); /* Add a bit more to fully hide with margin */
+  }
+
+  .translate-x-full {
+    transform: translateX(
+      calc(100% + 1rem)
+    ); /* Add a bit more to fully hide with margin */
+  }
+
+  .-translate-x-full {
+    transform: translateX(
+      calc(-100% - 1rem)
+    ); /* Add a bit more to fully hide with margin */
+  }
+
+  .translate-y-0 {
+    transform: translateY(0);
+  }
+
+  .translate-x-0 {
+    transform: translateX(0);
+  }
+
+  .main-app {
+    display: flex;
+    min-height: 100dvh;
+    /* background-color: var(--bg-color-primary); */
+    /* background-color: red; */
+  }
 }
