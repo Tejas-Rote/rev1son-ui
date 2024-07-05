@@ -13,3 +13,10 @@ export { default as ToastContent } from "./Toast/ToastContent";
 export { default as ToastTitle } from "./Toast/ToastTitle";
 export { default as ToastMsg } from "./Toast/ToastMsg";
 export { default as useTheme } from "./Theme/useTheme";
+
+export { default as CodeBlock } from "./CodeBlock/CodeBlock";
+
+export { default as AlertDialog } from "./AlertDialog/AlertDialog";
+export { default as AlertDialogContent } from "./AlertDialog/AlertDialogContent";
+export { default as AlertDialogTitle } from "./AlertDialog/AlertDialogTitle";
+export { default as AlertDialogActions } from "./AlertDialog/AlertDialogActions";

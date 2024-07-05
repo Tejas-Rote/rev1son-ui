@@ -1,21 +1,29 @@
 @import url("https://fonts.googleapis.com/css1?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-
+@import "highlight.js/styles/github.css"; /* You can choose a different theme */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
   --bg-color-primary: #ffffff;
+  --bg-color-contrast: #000000;
+  --bg-color-secondary: #181818;
   --text-color-primary: #000000;
+  --text-color-secondary: #333333;
+  --text-color-contrast: #ffffff;
   --primary-highlight: #ff0000;
-  --primary-border: rgba(0, 0, 0, 0.15);
+  --primary-border: rgba(0, 0, 0, 0.1);
   --secondary-border: rgba(0, 0, 0, 0.65);
   --initial-shadow: rgba(0, 0, 0, 0.15);
   --hover-shadow: rgba(0, 0, 0, 0.35);
 }
 [data-theme="dark"] {
   --bg-color-primary: #000000;
+  --bg-color-contrast: #ffffff;
+  --bg-color-secondary: #181818;
+  --text-color-contrast: #000000;
   --text-color-primary: #ffffff;
+  --text-color-secondary: #cccccc;
   --primary-highlight: #ff0000;
   --primary-border: rgba(255, 255, 255, 0.15);
   --secondary-border: rgba(255, 255, 255, 0.65);
@@ -32,11 +40,17 @@
   .bg-primary {
     background-color: var(--bg-color-primary);
   }
+  .bg-contrast {
+    background-color: var(--bg-color-contrast);
+  }
   .bg-secondary {
     background-color: var(--bg-color-secondary);
   }
   .text-primary {
     color: var(--text-color-primary);
+  }
+  .text-contrast {
+    color: var(--text-color-contrast);
   }
   .border-primary {
     border-color: var(--primary-border);
@@ -51,6 +65,9 @@
   }
 
   .bg-hover {
+    background-color: var(--primary-highlight);
+  }
+  .bg-highlight {
     background-color: var(--primary-highlight);
   }
   .text-hover {
