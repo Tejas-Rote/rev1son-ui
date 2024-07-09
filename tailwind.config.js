@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+      height: {
+        "50vh": "50vh",
+      },
       fontFamily: {
         sans: ["Space Mono", "ui-sans-serif", "system-ui"],
       },

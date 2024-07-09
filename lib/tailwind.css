@@ -18,9 +18,9 @@
   --hover-shadow: rgba(0, 0, 0, 0.35);
 }
 [data-theme="dark"] {
-  --bg-color-primary: #000000;
+  --bg-color-primary: #030605;
   --bg-color-contrast: #ffffff;
-  --bg-color-secondary: #181818;
+  --bg-color-secondary: #222222;
   --text-color-contrast: #000000;
   --text-color-primary: #ffffff;
   --text-color-secondary: #cccccc;
@@ -86,6 +86,10 @@
     transform: translateY(
       calc(100% + 1rem)
     ); /* Add a bit more to fully hide with margin */
+  }
+
+  .transition-max-height {
+    transition: max-height 0.3s ease-in-out;
   }
 
   .-translate-y-full {

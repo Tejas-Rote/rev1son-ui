@@ -37,7 +37,8 @@ export const Button = ({
   className,
   variant = "primary",
 }: ButtonProps): ReactNode => {
-  const baseStyles = "flex flex-row gap-2 p-2 rounded text-sm";
+  const baseStyles =
+    "flex flex-row items-center justify-center gap-2 p-2 rounded text-sm";
   const variantStyles = getVariantStyles(variant);
 
   return (

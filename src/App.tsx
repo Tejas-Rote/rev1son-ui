@@ -1,100 +1,66 @@
-import {
-  // ToastContent,
-  // ToastMsg,
-  // ToastTitle,
-  // Toast,
-  // ToastButton,
-  // CodeBlock,
-  AlertDialogActions,
-  AlertDialog,
-  AlertDialogContent,
-  AlertDialogTitle,
-} from "rev1son-ui";
-import { useTheme } from "rev1son-ui";
-// import "./App.css";
-// import { FiExternalLink } from "react-icons/fi";
-import { useState } from "react";
+import { Avatar, Badge, useTheme } from "rev1son-ui";
 import { Button } from "rev1son-ui";
-// const code = `
-// function helloWorld() {
-//   console.log('Hello, world!');
-// }
-// `;
-
+import FeaturedExample from "./examples/FeaturedExample";
+import AlertDialogExample from "./examples/AlertDialogExample";
+import { FaCodeBranch } from "react-icons/fa6";
+import StepperExample from "./examples/StepperExample";
+import AccordionExample from "./examples/AccordionExample";
 function App() {
   const { toggleTheme } = useTheme();
-  // const [toastVisible, setToastVisible] = useState(false);
-  // const showToast = () => {
-  //   setToastVisible(true);
-  // };
-  // const hideToast = () => {
-  //   setToastVisible(false);
-  // };
-  const [alertDialogVisible, setAlertDialogVisible] = useState(false);
 
-  const handleAlertDialog = () => {
-    setAlertDialogVisible(!alertDialogVisible);
-  };
   return (
-    <div className="app h-full min-h-dvh flex flex-col items-start justify-center p-4 bg-primary text-primary gap-5">
+    <div className="app h-full min-h-dvh flex flex-col items-start justify-start overflow-auto  p-4 bg-primary text-primary gap-5">
       <Button onClick={toggleTheme} variant="primary" className="font-mono">
         Toggle Theme
       </Button>
-
-      <Button
-        onClick={handleAlertDialog}
-        variant="primary"
+      <StepperExample />
+      <AlertDialogExample />
+      <FeaturedExample />
+      <AccordionExample />
+      <Avatar
+        alt="A"
+        src="https://github.com/Tejas-Rote.png"
+        size="small"
         className="font-mono"
+      />
+      <Avatar
+        alt="A"
+        src="https://github.com/Tejas-Rote.png"
+        size="medium"
+        className="font-mono"
+      />
+      <Avatar
+        alt="A"
+        src="https://github.com/Tejas-Rote.png"
+        size="large"
+        className="font-mono"
+      />
+      <Badge variant="primary" className="font-mono" rounded="full">
+        Primary
+      </Badge>
+      <Badge variant="secondary" className="font-mono" rounded="lg">
+        Secondary
+      </Badge>
+      <Badge variant="outlined" className="font-mono" rounded="md">
+        Outlined
+      </Badge>
+      <Badge variant="highlighted" className="font-mono" rounded="sm">
+        Highlighted
+      </Badge>
+      <Badge variant="primary" className="font-mono" rounded="full">
+        <FaCodeBranch />
+      </Badge>
+      <Badge variant="primary" className="font-mono" count={5} rounded="full">
+        Cart
+      </Badge>
+      <Badge
+        variant="primary"
+        count={true}
+        className="font-mono"
+        rounded="none"
       >
-        Show Alert
-      </Button>
-
-      {alertDialogVisible && (
-        <AlertDialog className="font-mono">
-          <AlertDialogTitle>Data Deletion Confirmation</AlertDialogTitle>
-          <AlertDialogContent>
-            You are about to permanently delete the selected data from our
-            records. This action cannot be undone. Please confirm if you want to
-            proceed with this deletion.
-          </AlertDialogContent>
-          <AlertDialogActions>
-            <Button variant="outlined" onClick={handleAlertDialog}>
-              Cancel
-            </Button>
-            <Button onClick={handleAlertDialog}>Continue</Button>
-          </AlertDialogActions>
-        </AlertDialog>
-      )}
-      {/* <button */}
-      {/*   className="mb-4 px-4 py-2 bg-primary text-primary rounded" */}
-      {/*   onClick={showToast} */}
-      {/* > */}
-      {/*   Show Toast */}
-      {/* </button> */}
-      {/* <div> */}
-      {/*   <Toast */}
-      {/*     duration={5000} */}
-      {/*     direction="bottom" */}
-      {/*     visible={toastVisible} */}
-      {/*     onClose={hideToast} */}
-      {/*   > */}
-      {/*     <ToastContent> */}
-      {/*       <ToastTitle>Email sent</ToastTitle> */}
-      {/*       <ToastMsg>Would you like to see the email.</ToastMsg> */}
-      {/*     </ToastContent> */}
-      {/*     <ToastButton onClick={() => console.log("clicked")}> */}
-      {/*       <FiExternalLink /> */}
-      {/*     </ToastButton> */}
-      {/*   </Toast> */}
-      {/* </div> */}
-      {/* <div className="p-4"> */}
-      {/*   <CodeBlock */}
-      {/*     code={code} */}
-      {/*     language="javascript" */}
-      {/*     title="Hello World Function" */}
-      {/*     showCopyButton */}
-      {/*   /> */}
-      {/* </div> */}
+        Notification
+      </Badge>
     </div>
   );
 }
