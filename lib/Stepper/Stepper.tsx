@@ -1,7 +1,7 @@
 import React from "react";
 import StepActions from "./StepActions";
-import Step from "./Step";
-import StepIndicator from "./StepIndicator";
+import Step, { StepProps } from "./Step";
+import StepIndicator, { StepIndicatorProps } from "./StepIndicator";
 
 interface StepperProps {
   steps: number;
@@ -49,7 +49,7 @@ const Stepper: React.FC<StepperProps> = ({
       >
         <div className="flex flex-row w-full h-full justify-center bg-red items-center ">
           {stepIndicators.map((child, index) =>
-            React.isValidElement(child)
+            React.isValidElement<StepIndicatorProps>(child)
               ? React.cloneElement(child, {
                   index: index,
                   currentStep: currentStep,
@@ -63,7 +63,7 @@ const Stepper: React.FC<StepperProps> = ({
       <div className={`flex flex-col w-full  `}>
         <div className="flex flex-col items-center justify-center w-full ">
           {stepComponents.map((child, index) =>
-            React.isValidElement(child)
+            React.isValidElement<StepProps>(child)
               ? React.cloneElement(child, {
                   isActive: index === currentStep,
                   isCompleted: index < currentStep,

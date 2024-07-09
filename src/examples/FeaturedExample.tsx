@@ -1,4 +1,3 @@
-import React from "react";
 import terminal from "../assets/terminal.png";
 import {
   Featured,

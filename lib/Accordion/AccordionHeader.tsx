@@ -1,6 +1,6 @@
 import React from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
-interface AccordionHeaderProps {
+export interface AccordionHeaderProps {
   title: string;
   isOpen?: boolean;
   onToggle?: () => void;

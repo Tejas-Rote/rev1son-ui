@@ -1,16 +1,15 @@
 import React from "react";
-import { useStepper } from "./StepperContext";
-
 export interface StepProps {
-  index: number;
+  index?: number;
   className?: string;
   children: React.ReactNode;
   isActive: boolean;
   isCompleted: boolean;
+  nextStep?: () => void;
+  prevStep?: () => void;
 }
 
 const Step: React.FC<StepProps> = ({
-  index,
   children,
   className,
   isActive,

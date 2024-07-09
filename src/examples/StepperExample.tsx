@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FaTerminal, FaCodeBranch, FaDocker, FaAws } from "react-icons/fa";
 import {
-  Button,
   Step,
   StepActions,
   StepIndicator,

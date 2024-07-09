@@ -6,8 +6,10 @@ interface Step {
   className?: string;
 }
 
-interface StepIndicatorProps {
+export interface StepIndicatorProps {
   currentStep: number;
+  index?: number;
+  totalSteps?: number;
   steps: Step[];
   className?: string;
   collapse?: boolean;
@@ -18,7 +20,6 @@ const StepIndicator: React.FC<StepIndicatorProps> = ({
   currentStep,
   steps,
   className,
-  collapse = true,
   orientation = "horizontal",
 }) => {
   return (
